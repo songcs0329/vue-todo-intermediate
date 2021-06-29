@@ -1,5 +1,5 @@
 # vue-todo-intermediate
-### (인프런 vue.js 중급강좌)
+### 인프런 vue.js 중급강좌(Vue.js, ES6, Vuex)
 https://www.inflearn.com/course/vue-pwa-vue-js-%EC%A4%91%EA%B8%89
 
 ## Project setup
