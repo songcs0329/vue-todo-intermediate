@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 import Modal from "./common/Modal.vue"
 
 export default {
@@ -26,9 +27,10 @@ export default {
     }
   },
   methods: {
+    ...mapMutations(['addOneItem']),
     addTodo() {
       if(this.newTodoItem != "") {
-        this.$emit('addTodoItem', this.newTodoItem)
+        this.addOneItem(this.newTodoItem)
         this.clearInput()
       } else {
         this.showModal = !this.showModal
